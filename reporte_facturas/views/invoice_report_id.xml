@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report id="report_invoice_total" 
+            string="Reporte de Facturas" 
+            model="xls.invoice.report" 
+            report_type="qweb-pdf" 
+            file="reporte_facturas.report_invoice_report" 
+            name="reporte_facturas.report_invoice_report"  
+            menu="False"/>
+
+
+        <report id="report_invoice_xls"
+            model="xls.invoice.report"
+            string="Invoice Excel Report"
+            report_type="xlsx"
+            name="reporte_facturas.invoice_xlsx"
+            file="reporte_facturas.invoice_xlsx"
+            attachment_use="True"
+            menu = "False"
+        />
+
+    </data>
+</odoo>
